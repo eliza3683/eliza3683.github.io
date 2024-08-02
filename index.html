@@ -219,15 +219,15 @@
 				foundkey = findkey(wInput);   			// look for a keyword.
 			}
 			if( foundkey == keyNotFound ){
-				if( !greet ){ greet = true; return "Demande a Jésus de t'apprendre la politesse." } 
+				if( !greet ){ greet = true; return "C'est quoi ton problème a pas vouloire dire bonjour ?" } 
 				else {
 					wPrevious = wInput;          			// save input to check repeats
 					if(( sInput.length < 10 ) && ( wTopic != "" ) && ( wTopic != wPrevious )){
 						lTopic = conjugate( sTopic ); sTopic = ""; wTopic = "";
-						return 'Je vois... "' + lTopic + '". dis moi en plus...';
+						return 'OK... "' + lTopic + '". dis moi en plus... tfaçon c mon metier decouter ta vie de merde';
 					} else {
 						if( sInput.length < 15 ){ 
-							return "dis moi en plus..."; 
+							return "dis moi en plus... tfaçon c mon metier decouter ta vie de merde"; 
 						} else { return phrase( sInput, foundkey ); }
 					}
 				}
@@ -236,11 +236,11 @@
 				greet = true; wPrevious = wInput;  			// save input to check repeats
 				return phrase( sInput, foundkey );			// Get our response
 			}
-		} else { return "le message été vide."; }
+		} else { return "un message vide ? nan mais t serieu ?"; }
 	}
 	function wakeup(){
-			var strng1 = "  le message été vide.";
-			var strng2 = "  le message été vide.";
+			var strng1 = "    un message vide ? nan mais t serieu ?";
+			var strng2 = "  un message vide ? nan mais t serieu ?";
 			update(strng1,strng2);
 	}
 		
