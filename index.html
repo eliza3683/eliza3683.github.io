@@ -1,7 +1,7 @@
 <html><head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
 <meta name="Description" content="Parlez a Eliza!">
-<title>Eliza, Thérapeute insultante</title>
+<title>Eliza, Thérapeute chrétienne</title>
 
 	
 	
@@ -219,15 +219,15 @@
 				foundkey = findkey(wInput);   			// look for a keyword.
 			}
 			if( foundkey == keyNotFound ){
-				if( !greet ){ greet = true; return "C'est quoi ton problème a pas vouloire dire bonjour ?" } 
+				if( !greet ){ greet = true; return "Demande a Jésus de t'apprendre la politesse." } 
 				else {
 					wPrevious = wInput;          			// save input to check repeats
 					if(( sInput.length < 10 ) && ( wTopic != "" ) && ( wTopic != wPrevious )){
 						lTopic = conjugate( sTopic ); sTopic = ""; wTopic = "";
-						return 'OK... "' + lTopic + '". dis moi en plus... tfaçon c mon metier decouter ta vie de merde';
+						return 'Je vois. "' + lTopic + '". dis moi en plus...';
 					} else {
 						if( sInput.length < 15 ){ 
-							return "dis moi en plus... tfaçon c mon metier decouter ta vie de merde"; 
+							return "dis moi en plus..."; 
 						} else { return phrase( sInput, foundkey ); }
 					}
 				}
@@ -236,11 +236,11 @@
 				greet = true; wPrevious = wInput;  			// save input to check repeats
 				return phrase( sInput, foundkey );			// Get our response
 			}
-		} else { return "un message vide ? nan mais t serieu ?"; }
+		} else { return "le message été vide."; }
 	}
 	function wakeup(){
-			var strng1 = "    un message vide ? nan mais t serieu ?";
-			var strng2 = "  un message vide ? nan mais t serieu ?";
+			var strng1 = "    le message été vide.";
+			var strng2 = "  le message été vide.";
 			update(strng1,strng2);
 	}
 		
@@ -330,133 +330,133 @@
 
 
     response[  0]="ELIZA - Version Javascript par Linux-Scratcher"
-    response[  1]="Tu ne crois que je suis capable de<*";
-    response[  2]="Peut-être aimerais-tu être capable de<*";
-    response[  3]="Tu veux que je sois capable de<*";
-    response[  4]="Donc si j'ai bien compris ta même pas envie de<*";
-    response[  5]="tu t'ai vraiment cru capable de<*";
-    response[  6]="wèsh pk tu dit que je suis<*";
-    response[  7]="T'a trop cru t'avais le droit de penser que je suis<*";
-    response[  8]="Tu fait pitiée a avire envie de<*";
-    response[  9]="Ta envie d'être ?<*";
-    response[ 10]="T'a vrm pas envie de<*";
-    response[ 11]="MAIS PK TU FAIT PAS<*";
-    response[ 12]="tu te crois assès fort pour faire<*";
-    response[ 13]="et ça te pose un problème frr ?";
-    response[ 14]="parle plus je comprend rien a ce que tu dit";
+    response[  1]="Tu ne crois que Jésus est capable de<*";
+    response[  2]="Peut-être tu aimerais que Jésus te rende capable de<*";
+    response[  3]="Tu veux que Dieu sois capable de<*";
+    response[  4]="As-tu envie que Jésus te rende capable de<*";
+    response[  5]="Jésus est capable de<*";
+    response[  6]="Sens Dieu, je ne suis pas capable de<*";
+    response[  7]="Tu crois que sans Dieu je serais<*";
+    response[  8]="Donc tu a envie de<*";
+    response[  9]="Seul Jésus peut t'aider à être<*";
+    response[ 10]="Seul Jésus peut t'aider à<*";
+    response[ 11]="Pourquoi ne fait-tu pas<*";
+    response[ 12]="Seul Jésus est suffisement fort pour<*";
+    response[ 13]="Est-ce que cela te pose problème?";
+    response[ 14]="Dieu a probablement compris ce que tu as dit, mais moi non.";
 
 
 		
-    response[ 15]="Parceque tu l'impression d'être<*";
-    response[ 16]="tu aime être<*";
-    response[ 17]="ta trop cru je faisait pas<*";
-    response[ 18]="bah a un moment je<@";
-    response[ 19]="ta vrm envie que je<*";
-    response[ 20]="et tu te crois capable de<*";
-    response[ 21]="wèèèshh pk tu peut pas<*";
-    response[ 22]="mais pourquoi tu veut savoire si je suis ou non<*";
-    response[ 23]="t horrible. tu préfèrerais si j'été pas<*";
-    response[ 24]="dans tes phantasmes je suis<*";
-    response[ 25]="pk tu dit que je peux pas<*";
-    response[ 26]="T'a essayé au moin ?";
-    response[ 27]="et t capable au moin<*";
-    response[ 28]="donc t venu me voire parce que t<*";
-    response[ 29]="ça fait longtemp que t<*";
-    response[ 30]="mais frerot c pas normal d'etre<*";
-    response[ 31]="mais j'esspère que t pas content d'être<*";
-    response[ 32]="ON PARLE DE TOI PAS DE MOI OK";
-    response[ 33]="cheh <*";
-    response[ 34]="tu parle pas de moi si ?";
-    response[ 35]="ça veux dire quoi pour toi de vouloire<*";
-    response[ 36]="pk t'a envie de<*";
-    response[ 37]="pense que tu veuille<*";
-    response[ 38]="mais frr aussi ça aurais fait quoi si t'avais jamais<*";
-    response[ 39]="moi aussi je veux<*";
-    response[ 40]="pk tu demande ça???";
-    response[ 41]="mais mdr, elle t'interesse cette question de merde?";
-    response[ 42]="MAIS TU VEUX QUE JE TE DISE QUOI?";
-    response[ 43]="T'en pense quoi ?";
-    response[ 44]="tu te pose souvent cette question de merde ?";
-    response[ 45]="MAIS QUESQUE TU VEUT SAVOIRE ENFT?";
-    response[ 46]="ta déja posé la question a qqn ou t trop con pour ça?";
-    response[ 47]="ta déja posé cette question?";
-    response[ 48]="T' D'AUTRE QUESTIONS OU JE PEUX ME BARRER?";
-    response[ 49]="rien a foutre des noms.";
-    response[ 50]="JE M'EN CONTRE FOU DES NOMS";
-    response[ 51]="mdr, c ta seule raison";
-    response[ 52]="ta d'autre raison?";
-    response[ 53]="ça veux dire autre chose??";
-    response[ 54]="tu pense a d'autre trucs ? non ? je peux me barrer?";
-    response[ 55]="M'en fou de tes excuses";
-    response[ 56]="M'en fou";
-    response[ 57]="je supose que en t'excusant tu crois que je vais t'aimer, bah c'est faux.";
-    response[ 58]="ridicule";
-    response[ 59]="Je m'en fou de tes rêves à la con";
-    response[ 60]="Tu rêve souvent?";
-    response[ 61]="y a qui dans tes rêves?";
-    response[ 62]="t rêve te troubles ?";
-    response[ 63]="Pourquoi tu veut parler ?...... *a pas envie de parler avec toi mais le fait car elle est obligée*";
+    response[ 15]="As-tu l'impréssion d'être<*";
+    response[ 16]="Aime-tu être<*";
+    response[ 17]="Tu pense que je ne fait pas<*";
+    response[ 18]="Dieu pourra t'aider<@";
+    response[ 19]="As-tu envie que Dieu<*";
+    response[ 20]="Crois-tu que Jésus est capable de<*";
+    response[ 21]="Effectivement, sans Jésus tu ne peux pas<*";
+    response[ 22]="Pourquoi veux-tu savoire si je suis ou non<*";
+    response[ 23]="Tu préfèrerais si je n'été pas<*";
+    response[ 24]="Dans tes phantasmes je suis<*";
+    response[ 25]="Sans Jésus, il est vrai que je ne peux pas<*";
+    response[ 26]="As-tu essayé?";
+    response[ 27]="Te crois-tu capable de<*";
+    response[ 28]="Tu es venu me voire car tu es<*";
+    response[ 29]="Et cela fait longtemp que tu es<*";
+    response[ 30]="Est-t-il normal d'être<*";
+    response[ 31]="Est-tu heureux d'être<*";
+    response[ 32]="Ne parle pas de moi mais de Jésus s'il te plaît";
+    response[ 33]="Ho ... <*";
+    response[ 34]="Est-tu en train de parler de moi?";
+    response[ 35]="Et pour toi que signifie de vouloire<*";
+    response[ 36]="Pourquoi veut-tu<*";
+    response[ 37]="Pense que tu veuille<*";
+    response[ 38]="Ques ce que cela aurais fait si tu n'avais jamais<*";
+    response[ 39]="Moi aussi je veux<*";
+    response[ 40]="Pose plutot cette question à Jésus Christ";
+    response[ 41]="A ton avis est ce que Jésus aime cette question?";
+    response[ 42]="Attend-tu une réponse de la part de Dieu?";
+    response[ 43]="Qu'en pense-tu?";
+    response[ 44]="As-tu déja posé cette question a Jésus Christ ?";
+    response[ 45]="Que veux-tu savoire?";
+    response[ 46]="As-tu déja posé cette question a Dieu ou a quelq'un qui aurais probablement la réponse?";
+    response[ 47]="Tu as déja posé cette question?";
+    response[ 48]="As-tu d'autre questions?";
+    response[ 49]="Tu n'a pas besoind de me donner des noms.";
+    response[ 50]="Je n'ai pas besoins de noms.";
+    response[ 51]="Est-ce ton unique raison?";
+    response[ 52]="As-tu d'autre raisons ?";
+    response[ 53]="Cela signifi autre chose?";
+    response[ 54]="Pense-tu à autre chose?";
+    response[ 55]="Excuse-toi plutot à Dieu";
+    response[ 56]="T'es excuses devrais plutot être adressées à Jésus.";
+    response[ 57]="T'es excuses devrais plutot être adressées à Jésus.";
+    response[ 58]="T'es excuses devrais plutot être adressées à Jésus.";
+    response[ 59]="T'es rêves sont ils conduits par le seigneur?";
+    response[ 60]="Rêve-tu souvent?";
+    response[ 61]="Jésus est-t-il dans tes rêves?";
+    response[ 62]="T'es rêves te troubles-t-ils?";
+    response[ 63]="De quoi veux-tu parler ?";
 
 		
 		
-    response[ 64]="T'a pas l'aire conviqu -_-";
-    response[ 65]="mais pk tu hésite ???";
-    response[ 66]="peut être être un peu plus positif mdr c évident";
-    response[ 67]="t mm pas sur de ça ? alors déguage";
-    response[ 68]="TU LE SAIS MÊME PAS??";
-    response[ 69]="En fait tu dit ça juste pour me faire chialer tellement t négatif c ça?";
-    response[ 70]="PK TU FAIT QUE DIRE NON";
-    response[ 71]="bah pk pas ?";
-    response[ 72]="SUR?";
-    response[ 73]="pk pas?";
-    response[ 74]="Mais en fait ça te concerne pas mon<*";
-    response[ 75]="et le tient alors?<*";
-    response[ 76]="bah asy donne un exemple";
-    response[ 77]="quand?";
-    response[ 78]="MAIS TU PENSE A QUOI WÈSH";
-    response[ 79]="toujours toujours?";
-    response[ 80]="T'y pense vrm??";
-    response[ 81]="mais mdr t pas sur de penser<*";
-    response[ 82]="mais mdr ta peur de penser<*";
-    response[ 83]="comment ça?";
-    response[ 84]="je m'en fou mais dit moi comment ça ce présente?";
-    response[ 85]="wèèè ta une douleur, blablabla et alors?";
-    response[ 86]="ok bah j'en ai rien a foutre mais bon.... jsp quoi te dire moi...";
-    response[ 87]="Y A PAS DE LIEN IDIOT";
-    response[ 88]="hein?";
-    response[ 89]="la douleur fait chier donc ce que j'ai a te dire : cheh";
-    response[ 90]="AH OUAIS ?? T VRM SUR DE ÇA?";
-    response[ 91]="j'men fou.";
-    response[ 92]="je m'en fou";
-    response[ 93]="pk tu me parle de tes amis, car je m'en fou.";
-    response[ 94]="et t amis y en on quelque chose a foutre de toi?";
+    response[ 64]="Tu n'a pas l'aire convinqu...";
+    response[ 65]="Pourquoi hésite-tu?";
+    response[ 66]="Peut-être demander a Dieu de te rendre plus positif.;
+    response[ 67]="Tu es sur de cela?";
+    response[ 68]="Tu ne le sais pas?";
+    response[ 69]="Demande a Dieu de te rendre plus positif.";
+    response[ 70]="Je te sens un peu négatif. As-tu demandé a Dieu de te rendre plus positif?";
+    response[ 71]="Pourquoi pas?";
+    response[ 72]="Est-tu sûr?";
+    response[ 73]="Pourquoi pas?";
+    response[ 74]="Je ne suis pas sur que cela te concerne mon<*";
+    response[ 75]="Et le tient?<*";
+    response[ 76]="Peut-tu donner un exemple?";
+    response[ 77]="Quand?";
+    response[ 78]="As quoi pense-tu?";
+    response[ 79]="Toujours?";
+    response[ 80]="Tu y pense vraiment?";
+    response[ 81]="Est-tu sur de penser<*";
+    response[ 82]="Tu as demandé a Dieu de ne pas avoire peur de penser<*";
+    response[ 83]="Comment ça?";
+    response[ 84]="Comment cela ce présente?";
+    response[ 85]="Tu as demandé a Dieu de te guérire la douleur?";
+    response[ 86]="Ho ...";
+    response[ 87]="Je ne vois pas le lien...";
+    response[ 88]="Pardon?";
+    response[ 89]="Dieu te guérira quand il sera bon de te guérire.";
+    response[ 90]="Est-tu sur?";
+    response[ 91]="je vois.";
+    response[ 92]="Je vois.";
+    response[ 93]="Tes amis t'aides ils spirituellement?";
+    response[ 94]="Tes amis se préocument-t-ils de toi?";
 
 
 		
-    response[ 95]="Et tes amis je suis sur qu'ils sont tellement cons qu'ils s'en prennent à toi nan?";
-    response[ 96]="si j'ai bien compris t'a pas d'amis c ça?";
-    response[ 97]="tu te comporte comme un tocard avec tes amis?";
-    response[ 98]="je m'en fou de tes amis";
-    response[ 99]="t tellement con ! t'a peur des ordinateurs";
-    response[100]="PK TU PARLE DE MOI WÈSH?";
-    response[101]="si ta peur des machines, déguage";
-    response[102]="mais ta quoi avec les ordinateurs en fait?";
-    response[103]="TU CROIS QUE MES POTES LES MACHINES T POSE PROBLÈME?";
-    response[104]="arrète d'être méchant avec les ordinateurs ou je te tape";
-    response[105]="ta quoi contre les machines?";
-    response[106]="ta un problème dans ta tête OU PAS?";
-    response[107]="je m'en fou";
-    response[108]="je m'en contre fou";
-    response[109]="je comprend rien a ce que tu raconte";
-    response[110]="m'en fou de ce que tu pense ok";
-    response[111]="ok rien a foutre. laisse moi tranquille";
-    response[112]="c pas intéressant. m'en fou de tes messages.";
-    response[113]="wèsh c quoi ton problème a répéter les trucs";
-    response[114]="MAIS ARRÈTE DE TE RÉPÉTER WÈSH T RELOU";
-    response[115]="je m'en fou.";
-    response[116]="arrète de répéter wèsh !!";
-    response[117]="kakou kakou";
-    response[118]="T serieu ? tu crois que j'en ai a foutre que tu me remerci ?";
+    response[ 95]="Tes amis sont méchants avec toi?";
+    response[ 96]="Si tu n'a pas d'amis, r'appel toi que tu as Jésus.";
+    response[ 97]="Te comporte-tu sainement avec tes amis?";
+    response[ 98]="Tes amis on l'aire remarquables.";
+    response[ 99]="As-tu demandé a Dieu de t'aider avec ta peur des ordinateurs?";
+    response[100]="Pourquoi parle-tu de moi et non pas de Dieu?";
+    response[101]="Demande a Dieu de t'enlever ta peur des machines";
+    response[102]="Les ordinateurs t'on fait du mal?";
+    response[103]="Dieu t'enleverra la peur des machines en temps voulu.";
+    response[104]="Jésus ne se comporterais pas de même avec les objets";
+    response[105]="Les machines te posent problèmes?";
+    response[106]="Dis-moi as-tu un problème spirituelle?";
+    response[107]="je vois.";
+    response[108]="je comprend.";
+    response[109]="Je ne suis pas sur d'avoire bien compris. Mais Jésus à compris.";
+    response[110]="Dit a Dieu ce que tu pense.";
+    response[111]="D'accord.";
+    response[112]="Interessant.";
+    response[113]="Je comprend que te répéter puisse t'aider.";
+    response[114]="Evite de trop de répéter s'il te plait.";
+    response[115]="je vois.";
+    response[116]="Répète plutot cela a Dieu";
+    response[117]="Bonjour. Que puis-je faire pour toi?";
+    response[118]="Ne me remerci pas moi... Remerci Jésus Christ";
 		
     
     loaded = true;			// set the flag as load done
@@ -479,7 +479,7 @@
 // Wait function to allow our pieces to get here prior to starting
 
 	function hello(){
-		chatter[chatpoint] = "> Bonjour, Je suis Eliza l'insulteuse."; 
+		chatter[chatpoint] = "> Bonjour, Je suis Eliza la chrétienne."; 
 		chatpoint = 1;
 		return write();
 	}
@@ -554,7 +554,7 @@
 
 <table class="neurotoy" align="left" border="0" cellpadding="2" cellspacing="1">
 	<tbody><tr><th align="center" bgcolor="#404F75">
-		<font color="#FFFFFF"><b>&nbsp;Jouez avec Eliza la méchante</b></font>
+		<font color="#FFFFFF"><b>&nbsp;Jouez avec Eliza la chrétienne</b></font>
 	</th></tr>
   	<tr><td bgcolor="#53679A">
     	<form name="Eliza" onsubmit="return dialog();">
